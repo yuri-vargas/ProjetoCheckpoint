@@ -14,6 +14,7 @@ body{
     background-image: url(imagens/stars.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: justify;
     margin: 0;
     max-width: 100%;
@@ -150,7 +151,7 @@ footer{
 }
 .capa-starfield{
     max-width: 100%;
-    padding-top: 10px;
+    padding: 2px;
     transition: transform 0.3s;
 }
 .capa-starfield:hover{
@@ -161,23 +162,45 @@ footer{
 .starfieldcapa-main{
     display: flex;
     align-items: center;
+    border: 1px dashed #ff2600;
+    border-radius: 3px;
+    margin: 2px;
 }
 .starfieldcapa-main > h3{
     max-width: 100%;
 }
 .starfieldcapa-main > p{
-    margin-left: -20%;
-    margin-top: -3%;
+
+}
+@media (max-width: 500px) {
+    .starfieldcapa-main{
+        max-width: 400px;
+        display: block;
+        margin: auto;
+        font-size: 20px;
+    }
+}
+@media (min-width: 500px){
+    .starfieldcapa-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.link-star h3{
+    padding: 11px 0px 19px 0px;
+    margin: 0;
 }
 .link-star{
-    margin-bottom: 10%;
-    margin-left: 10px;
-    max-width: 100%;
+    text-decoration: none;
+
 }
 .link-star:hover > h3{
     text-shadow: 1px  1px 2px #00000080;
     color: #be1d00;
     text-decoration: overline;
+    
 }
 main strong{
     color: #ff2600;
