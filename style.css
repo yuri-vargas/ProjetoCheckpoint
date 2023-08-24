@@ -150,6 +150,7 @@ footer{
     text-align: center;
 }
 .capa-starfield{
+    
     max-width: 100%;
     padding: 2px;
     transition: transform 0.3s;
@@ -163,23 +164,34 @@ footer{
     display: flex;
     align-items: center;
     border: 1px dashed #ff2600;
-    border-radius: 3px;
-    margin: 2px;
+    border-radius: 5px;
+    margin: 10px;
 }
 .starfieldcapa-main > h3{
     max-width: 100%;
 }
-.starfieldcapa-main > p{
-
-}
 @media (max-width: 500px) {
     .starfieldcapa-main{
-        max-width: 400px;
+        max-width: 400px;  
         display: block;
         margin: auto;
+        margin: 10px 0px 10px 0px;
         font-size: 20px;
     }
 }
+@media (max-width: 500px){
+    .capa-starfield{
+        position: relative;
+        left: 25px;
+    }
+}
+@media (max-width: 500px){
+    .starfieldcapa-main > .link-star{
+        position: relative;
+        left: 22px;
+    }
+}
+
 @media (min-width: 500px){
     .starfieldcapa-main{
         display: flex;
@@ -189,8 +201,10 @@ footer{
     }
 }
 .link-star h3{
+    position: relative;
     padding: 11px 0px 19px 0px;
     margin: 0;
+    left: 10px;
 }
 .link-star{
     text-decoration: none;
