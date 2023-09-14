@@ -47,6 +47,18 @@ header  {
     margin-bottom: 0px;
     
 }
+#mostrar-menu{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+#mostrar-menu:hover{
+    background-color: #be1d00;
+    color: rgb(26, 26, 26);
+}
 
 header> nav{
     background-color: rgb(26, 26, 26);
@@ -55,8 +67,12 @@ header> nav{
     background-image: linear-gradient(to right, #ff2600, transparent);
     border-radius: 5px;
 }
+nav{ 
+    display: none;
+}
 
 nav > a{
+    text-align: center;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif';
