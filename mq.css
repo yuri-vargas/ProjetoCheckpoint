@@ -9,8 +9,13 @@
         text-align: center;
     }
     .containerPai{
-
+        display: flex;
+        flex-direction: column;
     }
+    .containerPai:nth-child(1){
+        justify-content: flex-start;
+    }
+         
 }
 
 @media screen and (max-width: 768px) {
