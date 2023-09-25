@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
-    nav > a{
-        display: block;
-    }
-}
-
 @media screen and (min-width: 768px) {
     #mostrar-menu{
         display: none;
@@ -14,5 +8,14 @@
         margin-right: 50px;
         text-align: center;
     }
-    
+    .containerPai{
+
+    }
 }
+
+@media screen and (max-width: 768px) {
+    nav > a{
+        display: block;
+    }
+}
+
